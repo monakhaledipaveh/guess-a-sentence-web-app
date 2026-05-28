@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#7c3aed" stroke-width="5"/>
+
+  <!-- Abstract Puzzle Shape -->
+  <g fill="none" stroke-width="5">
+    <!-- Top-left curve (Teal) -->
+    <path d="M30,50 Q50,30 70,50" stroke="#14b8a6" />
+    
+    <!-- Bottom-right curve (Purple) -->
+    <path d="M70,50 Q50,70 30,50" stroke="#9333ea" />
+    
+    <!-- Horizontal line across the middle (Blue) -->
+    <path d="M30,50 H70" stroke="#3b82f6" />
+  </g>
+
+  <!-- Center dot for more focus -->
+  <circle cx="50" cy="50" r="5" fill="#f59e0b"/>
+
+  <!-- Small outer circle for dynamic feel -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#e5e7eb" stroke-width="2"/>
+</svg>

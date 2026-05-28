@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Theme tweaks (no font-family changes) ---- */
+:root{
+  --bs-primary:#7c3aed;
+  --bs-secondary:#64748b;
+  --bs-info:#06b6d4;
+  --bs-success:#22c55e;
+  --bs-warning:#f59e0b;
+  --bs-danger:#ef4444;
+  font-size:17px; /* bigger text overall */
+}
+
+/* soft site background */
+body{
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,.10), transparent),
+    radial-gradient(900px 500px at 90% 0%, rgba(236,72,153,.10), transparent),
+    var(--bs-body-bg);
+}
+
+/* smoother cards */
+.card{ border:0; border-radius:1rem; }
+
+/* colorful navbar */
+.navbar-gradient{
+  background: linear-gradient(
+    90deg,
+    rgba(19, 123, 234, 0.55) 0%,
+    rgba(77, 80, 235, 0.55) 50%,
+    rgba(151, 63, 234, 0.55) 100%
+  );
+  backdrop-filter: blur(6px);
+}
+.navbar-gradient .navbar-brand,
+.navbar-gradient .nav-link,
+.navbar-gradient .navbar-toggler,
+.navbar-gradient .btn{
+  color:#fff;
+}
+.navbar-gradient .nav-link:hover{ color:#fff; opacity:.9; }
+.navbar-gradient .btn-outline-light{ border-color:rgba(255,255,255,.7); }
+/ Login hover 
+.btn-login:hover{
+  background-color:#e5e7eb !important; /* gray-200 */
+  color:#111827 !important;            /* slate-900 */
+  border-color:#e5e7eb !important;
+}
+.btn-login{ transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.btn-logout:hover{
+  background-color:#e5e7eb !important; /* gray-200 */
+  color:#111827 !important;            /* slate-900 */
+  border-color:#e5e7eb !important;
+}
+.user-badge{           
+  font-size: 1rem;
+  padding: .5rem .75rem;
+}
+.user-name{            
+  font-size: 1rem;
+}
+/* hero card with gradient */
+.hero-card{
+  color:#fff;
+  border-radius:1.5rem;
+  background:
+    radial-gradient(140% 180% at 10% 10%, rgba(255,255,255,.12), rgba(255,255,255,.06) 35%, transparent 60%),
+    linear-gradient(135deg,#6366f1 0%,#a855f7 45%,#ec4899 100%);
+}
+
+/* sentence mask line */
+.mask-line{
+  @apply tracking-widest whitespace-pre-wrap text-3xl md:text-4xl py-2 px-3 rounded;
+  background-color: var(--bs-tertiary-bg);
+}
+
+/* footer */
+.app-footer{
+  color:var(--bs-secondary);
+  border-top:1px solid rgba(0,0,0,.06);
+  margin-top:3rem;
+  padding:1.25rem 0;
+}
